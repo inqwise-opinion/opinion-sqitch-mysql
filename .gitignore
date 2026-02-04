@@ -1,0 +1,24 @@
+# Root SQL artifacts
+/*.sql
+
+# Hidden files (keep .gitignore)
+/.*
+!.gitignore
+
+# OS/editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# Sqitch user-specific
+.sqitch/
