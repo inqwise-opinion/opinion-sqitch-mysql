@@ -1,4 +1,4 @@
-SELECT 1
+SELECT sqitch.checkit(COUNT(*), 'Table "_user_operation_types" does not exist')
 FROM information_schema.TABLES
 WHERE TABLE_SCHEMA = DATABASE()
   AND TABLE_NAME = '_user_operation_types';
