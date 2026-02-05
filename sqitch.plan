@@ -1,0 +1,116 @@
+%syntax-version=1.0.0
+%project=opinion
+%uri=https://github.com/inqwise-opinion/opinion-sqitch-mysql/
+
+
+createOpinionUsers 2026-02-04T08:18:00Z alex misyuk <glassfox@gmail.com>
+
+create_account_operation_types 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_item_types 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+attachUserAccount [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+changeAccountOwner [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+changeBalance [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+createUserAccount [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+deleteAccount [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+detachUserAccount [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccount [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountBusinessDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccounts [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountsByUserIdAndProduct [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getFreeBalance [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setAccountDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setAccountServicePackage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+autm_getEventTypes [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+autm_getJobs [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+autm_setEventType [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+autm_setJobLastExecutionTime [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountOperation [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountOperations [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getAccountsWithExpiredServicePackages [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getCountries [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getEmailAudit [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getGateway [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getProducts [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getServicePackage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getServicePackages [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getStatesProvinces [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getTimezones [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getUser [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getUserByProduct [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getUserDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getUserOperations [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+getUsers [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+login [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_activateMessage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_closeMessage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_deleteMessage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_excludeMessage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_getMessages [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+msg_setMessage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_addChargesToBill [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_cancelCharge [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_deleteCharge [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_deleteInvoice [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getBillItems [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getBillPostPayActions [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getCharge [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getChargeByReferenceId [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getCharges [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getInvoice [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getInvoices [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_getTransaction [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_openInvoice [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_removeChargeFromBill [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_setCharge [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_setChargePayment [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_setInvoice [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_setPayment [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_setRefund [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_updateCharge [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+pay_updateInvoice [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+prm_deleteReferences [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+prm_getVariables [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+prm_setVariable [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+register [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+resetPassword [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setAccountBusinessDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setAutoLogin [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setEmailAudit [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setExternalUser [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setServicePackage [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+setUserDetails [createOpinionUsers] 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create__user_operation_types 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_accounts 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_accounts_details 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_accounts_operations 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_autm_assembiles 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_autm_event_types 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_autm_jobs 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_campaigns 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_countries 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_emails_audit 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_gateways 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_geoip_blocks 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_geoip_locations 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_groups 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_messages 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_accounts$service_packages 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_items$groups 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_pay_bills$items 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_users$accounts 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_pay_charges 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_pay_invoices 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_pay_transactions 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_prm_categories 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_prm_definitions 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_prm_lookups 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_prm_references 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_products 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_schema_migrations 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_service_packages 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_states 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_timezones 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_users 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_users_details 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+create_users_operations 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>

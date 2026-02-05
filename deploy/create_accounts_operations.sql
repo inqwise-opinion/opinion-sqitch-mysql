@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `accounts_operations` (
+  `accop_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `accop_type_id` tinyint(4) NOT NULL,
+  `user_id` bigint(20) unsigned DEFAULT NULL,
+  `account_id` bigint(20) unsigned NOT NULL,
+  `product_id` bigint(20) DEFAULT NULL,
+  `source_guid` varchar(50) DEFAULT NULL,
+  `amount` decimal(10,2) DEFAULT NULL,
+  `sp_id` bigint(20) unsigned DEFAULT NULL COMMENT 'service_package_id',
+  `client_ip` varchar(35) DEFAULT NULL,
+  `geo_country_id` int(5) DEFAULT NULL,
+  `insert_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modify_date` datetime DEFAULT NULL,
+  `comments` varchar(1000) DEFAULT NULL,
+  `reference_id` bigint(20) DEFAULT NULL,
+  `reference_type_id` tinyint(4) DEFAULT NULL,
+  `backoffice_user_id` bigint(20) unsigned DEFAULT NULL,
+  `balance` decimal(10,2) unsigned NOT NULL,
+  `source_id` tinyint(4) DEFAULT NULL,
+  PRIMARY KEY (`accop_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5928 DEFAULT CHARSET=utf8;

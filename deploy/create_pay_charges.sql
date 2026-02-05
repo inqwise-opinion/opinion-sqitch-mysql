@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `pay_charges` (
+  `charge_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `bill_id` bigint(20) unsigned DEFAULT NULL,
+  `bill_type_id` tinyint(4) DEFAULT NULL,
+  `charge_name` varchar(255) NOT NULL,
+  `charge_description` text,
+  `insert_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modify_date` datetime DEFAULT NULL,
+  `insert_user_id` bigint(20) unsigned DEFAULT NULL,
+  `modify_user_id` bigint(20) unsigned DEFAULT NULL,
+  `reference_type_id` tinyint(3) unsigned DEFAULT NULL,
+  `reference_id` bigint(20) DEFAULT NULL,
+  `for_account_id` bigint(20) NOT NULL,
+  `post_pay_action` text,
+  `charge_status_id` tinyint(4) NOT NULL,
+  `amount` decimal(17,2) NOT NULL,
+  `amount_currency` varchar(20) NOT NULL,
+  `expiry_date` datetime DEFAULT NULL,
+  `post_pay_action_data` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`charge_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=139 DEFAULT CHARSET=utf8;

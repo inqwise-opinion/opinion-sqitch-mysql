@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `pay_transactions` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `parent_id` bigint(20) DEFAULT NULL,
+  `pay_transaction_type_id` tinyint(4) NOT NULL,
+  `credit_card_type_id` tinyint(4) DEFAULT NULL,
+  `insert_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `user_id` bigint(20) unsigned DEFAULT NULL,
+  `account_id` bigint(20) DEFAULT NULL,
+  `processor_type_id` tinyint(3) unsigned NOT NULL,
+  `credit_card_number` int(10) unsigned DEFAULT NULL,
+  `request_date` datetime NOT NULL,
+  `requested_amount` decimal(10,2) NOT NULL,
+  `amount` decimal(10,2) NOT NULL,
+  `amount_currency` char(3) NOT NULL,
+  `processor_transaction_date` datetime NOT NULL,
+  `transaction_status_id` tinyint(4) NOT NULL,
+  `processor_transaction_id` varchar(255) NOT NULL,
+  `details` text,
+  PRIMARY KEY (`id`),
+  KEY `INX__parent_id` (`parent_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
