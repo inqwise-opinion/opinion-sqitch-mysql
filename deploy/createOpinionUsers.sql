@@ -14,5 +14,13 @@ PREPARE stmt FROM @sql;
 EXECUTE stmt;
 DEALLOCATE PREPARE stmt;
 
-GRANT EXECUTE, SELECT, UPDATE, DELETE, CREATE TEMPORARY TABLES ON *.* TO 'opinion'@'localhost';
-GRANT EXECUTE, SELECT, UPDATE, DELETE, CREATE TEMPORARY TABLES ON *.* TO 'opinion-app'@'%';
+-- Additional grants scoped to the current database for opinion-app
+SET @current_db = DATABASE();
+
+SET @sql = CONCAT("GRANT EXECUTE, SELECT ON `", @current_db, "`.* TO 'opinion-app'@'%'");
+
+PREPARE stmt FROM @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt;
+
+SET @sql = CONCAT("GRANT INSERT, EXECUTE, LOCK TABLES, CREATE TEMPORARY TABLES, INSERT, DELETE, SELECT, UPDATE ON `", @current_db, "`.* TO 'opinion'@'localhost'");
+PREPARE stmt FROM @sql; EXECUTE stmt; DEALLOCATE PREPARE stmt;
+

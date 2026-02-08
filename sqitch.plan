@@ -114,3 +114,4 @@ create_timezones 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
 create_users 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
 create_users_details 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
 create_users_operations 2026-02-05T08:32:52Z alex misyuk <glassfox@gmail.com>
+seed_service_packages [create_service_packages] 2026-02-08T08:23:42Z alex misyuk <glassfox@gmail.com>

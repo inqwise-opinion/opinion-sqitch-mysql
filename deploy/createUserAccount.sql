@@ -50,9 +50,9 @@ WHERE
 	
 	SET v_account_operation_id = LAST_INSERT_ID();
 	
-	CALL `getAccount`(v_account_id);
-	
 	COMMIT;
+	
+	SELECT v_account_id AS account_id, p_uid_prefix as uid_prefix;
 END$$
 
 DELIMITER ;
