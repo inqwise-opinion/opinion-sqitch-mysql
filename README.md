@@ -1,5 +1,7 @@
 # Opinion MySQL (Sqitch)
 
+![CI](https://github.com/inqwise-opinion/opinion-sqitch-mysql/actions/workflows/ci.yml/badge.svg)
+
 This repository manages database changes for the Opinion MySQL database using Sqitch.
 
 ## Structure

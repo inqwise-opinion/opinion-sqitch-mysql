@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sqitch:
+    runs-on: ubuntu-latest
+    services:
+      mariadb:
+        image: mariadb:12
+        env:
+          MARIADB_ROOT_PASSWORD: root
+          MARIADB_DATABASE: office
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mariadb-admin ping -h 127.0.0.1 -proot"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y sqitch mariadb-client libdbd-mysql-perl
+
+      - name: Wait for MySQL
+        run: |
+          for i in {1..30}; do
+            mariadb-admin ping -h 127.0.0.1 -proot && break
+            sleep 2
+          done
+
+      - name: Sqitch deploy
+        env:
+          SQITCH_TARGET: db:mysql://root:root@127.0.0.1/office
+        run: sqitch deploy
+
+      - name: Sqitch verify
+        env:
+          SQITCH_TARGET: db:mysql://root:root@127.0.0.1/office
+        run: sqitch verify
